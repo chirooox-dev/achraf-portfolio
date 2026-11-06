@@ -1,0 +1,426 @@
+
+/* =========================================
+   ACHRAF PORTFOLIO — FUTURISTIC REDESIGN
+========================================= */
+
+.portfolio {
+  --bg: #08060d;
+  --surface: #110d19;
+  --accent: #b45cff;
+  --text: #faf7ff;
+  --muted: #aaa0b8;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 15% 15%, rgba(153, 54, 255, .17), transparent 38%),
+    radial-gradient(ellipse at 85% 45%, rgba(255, 35, 180, .10), transparent 35%),
+    #08060d;
+  color: var(--text);
+}
+
+/* GLOBAL PANEL STYLE */
+
+.about-section,
+.tech-section,
+.projects-section,
+.services-section,
+.contact-section,
+.intro-section {
+  position: relative;
+  width: calc(100% - 64px);
+  max-width: 1120px;
+  margin: 24px auto;
+  padding: 48px;
+  overflow: hidden;
+  border: 1px solid rgba(190, 110, 255, .19);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(30, 17, 43, .94), rgba(12, 9, 19, .97));
+  box-shadow:
+    0 0 35px rgba(137, 48, 255, .07),
+    inset 0 1px rgba(255, 255, 255, .035);
+}
+
+.about-section::before,
+.tech-section::before,
+.projects-section::before,
+.services-section::before,
+.contact-section::before,
+.intro-section::before {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 35%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c45cff, transparent);
+  content: "";
+}
+
+/* NAVIGATION */
+
+.navbar {
+  width: min(1200px, calc(100% - 64px));
+  height: 82px;
+  border-bottom-color: rgba(190, 110, 255, .18);
+}
+
+.brand-mark {
+  border-color: rgba(196, 92, 255, .65);
+  background: rgba(165, 70, 255, .10);
+  box-shadow: 0 0 18px rgba(165, 70, 255, .18);
+}
+
+.brand-dot,
+.accent-dot {
+  color: #d58aff;
+}
+
+.nav-links a {
+  transition: color .2s ease, text-shadow .2s ease;
+}
+
+.nav-links a:hover {
+  color: #e3b5ff;
+  text-shadow: 0 0 14px rgba(205, 115, 255, .65);
+}
+
+.nav-cta {
+  border-color: rgba(192, 100, 255, .5);
+  background: rgba(161, 65, 255, .08);
+  color: #d9a4ff;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 720px;
+}
+
+.availability {
+  border-color: rgba(191, 112, 255, .25);
+  background: rgba(145, 57, 255, .08);
+}
+
+.eyebrow,
+.section-kicker {
+  color: #d58aff;
+}
+
+.hero h1 span:not(.accent-dot) {
+  color: #d58aff;
+  text-shadow: 0 0 28px rgba(188, 80, 255, .25);
+}
+
+.button-primary,
+.contact-submit {
+  border: 1px solid #d58aff;
+  background: linear-gradient(110deg, #a43dff, #d34bcb);
+  color: white;
+  box-shadow: 0 0 25px rgba(174, 65, 255, .20);
+}
+
+.button-primary:hover,
+.contact-submit:hover:not(:disabled) {
+  background: linear-gradient(110deg, #bd65ff, #ed66df);
+}
+
+.button-secondary {
+  border-color: rgba(190, 110, 255, .35);
+  background: rgba(255, 255, 255, .025);
+}
+
+/* HERO PORTRAIT */
+
+.visual-core {
+  width: 235px;
+  height: 235px;
+  overflow: hidden;
+  border: 2px solid rgba(207, 119, 255, .75);
+  background:
+    linear-gradient(145deg, #30104a, #130c20);
+  box-shadow:
+    0 0 35px rgba(173, 62, 255, .35),
+    0 0 100px rgba(173, 62, 255, .20);
+}
+
+.visual-core > span,
+.visual-core .core-caption {
+  display: none;
+}
+
+.visual-core {
+  background-image: url("./assets/hero.png");
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.visual-orbit {
+  border-color: rgba(188, 105, 255, .25);
+}
+
+.orbit-two {
+  border-color: rgba(236, 77, 215, .25);
+}
+
+.floating-label {
+  border-color: rgba(196, 111, 255, .28);
+  background: rgba(18, 11, 29, .92);
+  box-shadow: 0 0 20px rgba(160, 60, 255, .12);
+}
+
+/* INTRO */
+
+.intro-section {
+  text-align: center;
+}
+
+.intro-section > p:last-child {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading h2,
+.intro-section h2 {
+  color: #fff;
+}
+
+.section-heading h2 span,
+.intro-section h2 span,
+.contact-heading h2 span {
+  color: #d58aff;
+  text-shadow: 0 0 25px rgba(188, 80, 255, .20);
+}
+
+/* ABOUT */
+
+.about-focus,
+.tech-card,
+.service-card,
+.contact-form {
+  border: 1px solid rgba(190, 110, 255, .18);
+  background: linear-gradient(145deg, #1b1028, #100c17);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .035);
+}
+
+.about-focus {
+  border-radius: 17px;
+}
+
+.focus-icon,
+.tech-icon,
+.service-icon {
+  border-color: rgba(199, 111, 255, .35);
+  background: rgba(166, 75, 255, .12);
+  color: #ddaaff;
+}
+
+/* TECHNOLOGIES */
+
+.tech-card {
+  min-height: 205px;
+  border-radius: 17px;
+}
+
+.tech-card:hover,
+.service-card:hover {
+  border-color: rgba(215, 131, 255, .65);
+  box-shadow: 0 0 28px rgba(166, 75, 255, .12);
+}
+
+.tech-tag {
+  border-color: rgba(192, 110, 255, .22);
+  background: rgba(167, 82, 255, .08);
+  color: #e2c8f7;
+}
+
+/* PROJECTS */
+
+.project-visual {
+  border-color: rgba(204, 118, 255, .25);
+  box-shadow: inset 0 0 45px rgba(0, 0, 0, .15);
+}
+
+.project-visual--namz-service {
+  background: linear-gradient(135deg, #153d3c, #24103a 85%);
+}
+
+.project-visual--restoo {
+  background: linear-gradient(135deg, #713c55, #24102e 85%);
+}
+
+.project-visual--baqal {
+  background: linear-gradient(135deg, #315b39, #19102b 85%);
+}
+
+.project-visual--namz-log {
+  background: linear-gradient(135deg, #343d70, #21102e 85%);
+}
+
+.project-visual:hover {
+  border-color: #d58aff;
+  box-shadow: 0 0 30px rgba(190, 85, 255, .14);
+}
+
+.project-tag {
+  border-color: rgba(196, 111, 255, .25);
+  background: rgba(166, 75, 255, .08);
+  color: #d9a4ff;
+}
+
+.project-link {
+  color: #d9a4ff;
+}
+
+/* SERVICES */
+
+.service-card {
+  min-height: 270px;
+  border-radius: 17px;
+}
+
+.service-card-line {
+  border-color: #d58aff;
+  box-shadow: 0 0 12px rgba(213, 138, 255, .55);
+}
+
+/* CONTACT */
+
+.contact-form {
+  border-radius: 19px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-color: rgba(190, 110, 255, .18);
+  background: #0b0811;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c77aff;
+  box-shadow: 0 0 0 3px rgba(185, 95, 255, .13);
+}
+
+.contact-submit {
+  border-radius: 11px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float {
+  box-shadow: 0 0 25px rgba(37, 211, 102, .25);
+}
+
+/* MOBILE NAVIGATION */
+
+.mobile-menu {
+  border-color: rgba(190, 110, 255, .28);
+  background: rgba(17, 11, 27, .97);
+}
+
+/* RTL */
+
+.portfolio[dir="rtl"] .about-section,
+.portfolio[dir="rtl"] .tech-section,
+.portfolio[dir="rtl"] .projects-section,
+.portfolio[dir="rtl"] .services-section,
+.portfolio[dir="rtl"] .contact-section {
+  direction: rtl;
+}
+
+.portfolio[dir="rtl"] .intro-section {
+  direction: rtl;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .about-section,
+  .tech-section,
+  .projects-section,
+  .services-section,
+  .contact-section,
+  .intro-section {
+    width: calc(100% - 40px);
+    padding: 35px;
+  }
+
+  .visual-core {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+  .navbar {
+    width: calc(100% - 40px);
+  }
+
+  .hero {
+    min-height: 730px;
+  }
+
+  .hero-visual {
+    opacity: .85;
+  }
+
+  .visual-core {
+    width: 145px;
+    height: 145px;
+  }
+
+  .about-section,
+  .tech-section,
+  .projects-section,
+  .services-section,
+  .contact-section,
+  .intro-section {
+    width: calc(100% - 28px);
+    margin: 16px auto;
+    padding: 27px 20px;
+    border-radius: 17px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .tech-grid,
+  .projects-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-card {
+    min-height: auto;
+  }
+
+  .project-visual {
+    border-radius: 13px;
+  }
+
+  .contact-form {
+    padding: 20px 16px;
+  }
+
+  .whatsapp-float {
+    z-index: 1000;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio *,
+  .portfolio *::before,
+  .portfolio *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
